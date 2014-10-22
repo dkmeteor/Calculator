@@ -1,25 +1,238 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="5ES-fO-IZN"/>
+                        <viewControllerLayoutGuide type="bottom" id="nkq-DD-8xk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundWithLabelView2.png" translatesAutoresizingMaskIntoConstraints="NO" id="KSJ-Ct-YUN">
+                                <rect key="frame" x="0.0" y="0.0" width="680" height="800"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="800" id="HT5-ep-wyp"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="HT5-ep-wyp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yom-9y-7cd">
+                                <rect key="frame" x="0.0" y="0.0" width="680" height="132"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb8-Gf-uit">
+                                <rect key="frame" x="16" y="160" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GkW-rx-a9G"/>
+                                    <constraint firstAttribute="height" constant="50" id="H86-Ns-sJ1"/>
+                                    <constraint firstAttribute="width" constant="80" id="XL6-Af-15h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="C" backgroundImage="btnRed.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GkW-rx-a9G"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="GkW-rx-a9G"/>
+                                        <exclude reference="H86-Ns-sJ1"/>
+                                        <exclude reference="XL6-Af-15h"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-zP-CyO">
+                                <rect key="frame" x="208" y="160" width="360" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PO8-CC-j3d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="±" backgroundImage="BtnGrey.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PO8-CC-j3d"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="PO8-CC-j3d"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sR-9P-0Dl">
+                                <rect key="frame" x="112" y="160" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="DSd-fg-NkA"/>
+                                    <constraint firstAttribute="height" constant="50" id="bLo-4s-lOT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="√" backgroundImage="BtnGrey.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bLo-4s-lOT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="DSd-fg-NkA"/>
+                                        <include reference="bLo-4s-lOT"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMw-HC-GVc">
+                                <rect key="frame" x="224" y="160" width="360" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tot-dn-gDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="%" backgroundImage="BtnGrey.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tot-dn-gDZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="tot-dn-gDZ"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jb8-Gf-uit" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7DI-q6-iGY"/>
+                            <constraint firstItem="Jb8-Gf-uit" firstAttribute="width" secondItem="wiT-zP-CyO" secondAttribute="width" id="92I-NH-ZKm"/>
+                            <constraint firstItem="KSJ-Ct-YUN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9ZM-d3-oZB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gMw-HC-GVc" secondAttribute="trailing" id="9db-BD-sVB"/>
+                            <constraint firstItem="gMw-HC-GVc" firstAttribute="top" secondItem="5ES-fO-IZN" secondAttribute="bottom" constant="100" id="Bsm-Z6-7PR"/>
+                            <constraint firstItem="7sR-9P-0Dl" firstAttribute="top" secondItem="5ES-fO-IZN" secondAttribute="bottom" constant="100" id="CnZ-OJ-Gsa"/>
+                            <constraint firstItem="wiT-zP-CyO" firstAttribute="top" secondItem="5ES-fO-IZN" secondAttribute="bottom" constant="100" id="FP6-ug-VbK"/>
+                            <constraint firstItem="Jb8-Gf-uit" firstAttribute="width" secondItem="gMw-HC-GVc" secondAttribute="width" id="SNi-FW-hc9"/>
+                            <constraint firstItem="gMw-HC-GVc" firstAttribute="leading" secondItem="wiT-zP-CyO" secondAttribute="trailing" constant="16" id="YfK-Ca-JO6"/>
+                            <constraint firstItem="7sR-9P-0Dl" firstAttribute="leading" secondItem="Jb8-Gf-uit" secondAttribute="trailing" constant="16" id="ZN6-ZS-dhJ"/>
+                            <constraint firstItem="KSJ-Ct-YUN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ZRA-5X-nPM"/>
+                            <constraint firstItem="wiT-zP-CyO" firstAttribute="leading" secondItem="7sR-9P-0Dl" secondAttribute="trailing" constant="16" id="d8E-WP-ame"/>
+                            <constraint firstItem="Jb8-Gf-uit" firstAttribute="width" secondItem="7sR-9P-0Dl" secondAttribute="width" id="gm0-cn-rq7"/>
+                            <constraint firstItem="wiT-zP-CyO" firstAttribute="leading" secondItem="7sR-9P-0Dl" secondAttribute="trailing" constant="16" id="h3u-hG-duW"/>
+                            <constraint firstAttribute="trailing" secondItem="KSJ-Ct-YUN" secondAttribute="trailing" id="n2Z-1a-c4b"/>
+                            <constraint firstItem="Jb8-Gf-uit" firstAttribute="top" secondItem="5ES-fO-IZN" secondAttribute="bottom" constant="100" id="ta0-6O-nXN"/>
+                            <constraint firstItem="nkq-DD-8xk" firstAttribute="top" secondItem="KSJ-Ct-YUN" secondAttribute="bottom" id="uIn-2b-7QN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Jb8-Gf-uit"/>
+                                <exclude reference="wiT-zP-CyO"/>
+                                <exclude reference="7sR-9P-0Dl"/>
+                                <exclude reference="gMw-HC-GVc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9ZM-d3-oZB"/>
+                                <exclude reference="ZRA-5X-nPM"/>
+                                <exclude reference="n2Z-1a-c4b"/>
+                                <exclude reference="7DI-q6-iGY"/>
+                                <exclude reference="92I-NH-ZKm"/>
+                                <exclude reference="SNi-FW-hc9"/>
+                                <exclude reference="gm0-cn-rq7"/>
+                                <exclude reference="ta0-6O-nXN"/>
+                                <exclude reference="CnZ-OJ-Gsa"/>
+                                <exclude reference="ZN6-ZS-dhJ"/>
+                                <exclude reference="FP6-ug-VbK"/>
+                                <exclude reference="d8E-WP-ame"/>
+                                <exclude reference="h3u-hG-duW"/>
+                                <exclude reference="9db-BD-sVB"/>
+                                <exclude reference="Bsm-Z6-7PR"/>
+                                <exclude reference="YfK-Ca-JO6"/>
+                                <exclude reference="uIn-2b-7QN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Jb8-Gf-uit"/>
+                                <include reference="wiT-zP-CyO"/>
+                                <include reference="7sR-9P-0Dl"/>
+                                <include reference="gMw-HC-GVc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9ZM-d3-oZB"/>
+                                <include reference="ZRA-5X-nPM"/>
+                                <include reference="n2Z-1a-c4b"/>
+                                <include reference="7DI-q6-iGY"/>
+                                <include reference="92I-NH-ZKm"/>
+                                <include reference="SNi-FW-hc9"/>
+                                <include reference="gm0-cn-rq7"/>
+                                <include reference="ta0-6O-nXN"/>
+                                <include reference="CnZ-OJ-Gsa"/>
+                                <include reference="ZN6-ZS-dhJ"/>
+                                <include reference="FP6-ug-VbK"/>
+                                <include reference="d8E-WP-ame"/>
+                                <include reference="h3u-hG-duW"/>
+                                <include reference="9db-BD-sVB"/>
+                                <include reference="Bsm-Z6-7PR"/>
+                                <include reference="YfK-Ca-JO6"/>
+                                <include reference="uIn-2b-7QN"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="303" y="378.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sIC-H8-3yz">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="v8m-6m-bka" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Tz-p6-NzI"/>
+                        <viewControllerLayoutGuide type="bottom" id="e9w-pC-r5P"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="w0s-kc-duu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxX-G2-97R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970.5" y="378.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BtnGrey.png" width="308" height="207"/>
+        <image name="backgroundWithLabelView2.png" width="1536" height="2048"/>
+        <image name="btnRed.png" width="308" height="207"/>
+    </resources>
 </document>
