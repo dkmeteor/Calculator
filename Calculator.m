@@ -20,7 +20,23 @@
 
 - (NSString *) pushNext:(NSString *) string
 {
-    if(self.operatorString == nil)
+    
+    if([string isEqualToString:@"√"])
+    {
+        if(_operatorString != nil)
+        {
+            return  _operatorString;
+        }
+        else if(_preNumber != DOUBLE_MAX)
+        {
+            return [NSString stringWithFormat:@"%f",_preNumber];
+        }
+        else
+        {
+            return @"0";
+        }
+    }
+    else if(self.operatorString == nil)
     {
         _operatorString = [[NSMutableString alloc] init];
     }
