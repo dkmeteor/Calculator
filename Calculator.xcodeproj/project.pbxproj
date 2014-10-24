@@ -17,13 +17,15 @@
 		42629A5D19F79AA3005A30DF /* backgroundWithLabelView2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5519F79AA3005A30DF /* backgroundWithLabelView2.png */; };
 		42629A5E19F79AA3005A30DF /* btnBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5619F79AA3005A30DF /* btnBlack.png */; };
 		42629A5F19F79AA3005A30DF /* btnBlackPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5719F79AA3005A30DF /* btnBlackPressed.png */; };
-		42629A6019F79AA3005A30DF /* BtnGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5819F79AA3005A30DF /* BtnGrey.png */; };
+		42629A6019F79AA3005A30DF /* btnGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5819F79AA3005A30DF /* btnGrey.png */; };
 		42629A6119F79AA3005A30DF /* btnGreyPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5919F79AA3005A30DF /* btnGreyPressed.png */; };
 		42629A6219F79AA3005A30DF /* btnGreySelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5A19F79AA3005A30DF /* btnGreySelected.png */; };
 		42629A6319F79AA3005A30DF /* btnRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5B19F79AA3005A30DF /* btnRed.png */; };
 		42629A6419F79AA3005A30DF /* btnRedPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A5C19F79AA3005A30DF /* btnRedPressed.png */; };
 		42629A6F19F7A0B7005A30DF /* appIcon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A6D19F7A0B7005A30DF /* appIcon-120x120.png */; };
 		42629A7019F7A0B7005A30DF /* appIcon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 42629A6E19F7A0B7005A30DF /* appIcon-180x180.png */; };
+		42629A7319F7B550005A30DF /* ButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42629A7219F7B550005A30DF /* ButtonFactory.m */; };
+		429CD6B519F8A98D00E01E3E /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CD6B419F8A98D00E01E3E /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +55,17 @@
 		42629A5519F79AA3005A30DF /* backgroundWithLabelView2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundWithLabelView2.png; sourceTree = "<group>"; };
 		42629A5619F79AA3005A30DF /* btnBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBlack.png; sourceTree = "<group>"; };
 		42629A5719F79AA3005A30DF /* btnBlackPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnBlackPressed.png; sourceTree = "<group>"; };
-		42629A5819F79AA3005A30DF /* BtnGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnGrey.png; sourceTree = "<group>"; };
+		42629A5819F79AA3005A30DF /* btnGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGrey.png; sourceTree = "<group>"; };
 		42629A5919F79AA3005A30DF /* btnGreyPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGreyPressed.png; sourceTree = "<group>"; };
 		42629A5A19F79AA3005A30DF /* btnGreySelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnGreySelected.png; sourceTree = "<group>"; };
 		42629A5B19F79AA3005A30DF /* btnRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRed.png; sourceTree = "<group>"; };
 		42629A5C19F79AA3005A30DF /* btnRedPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRedPressed.png; sourceTree = "<group>"; };
 		42629A6D19F7A0B7005A30DF /* appIcon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-120x120.png"; sourceTree = "<group>"; };
 		42629A6E19F7A0B7005A30DF /* appIcon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon-180x180.png"; sourceTree = "<group>"; };
+		42629A7119F7B550005A30DF /* ButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonFactory.h; sourceTree = "<group>"; };
+		42629A7219F7B550005A30DF /* ButtonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonFactory.m; sourceTree = "<group>"; };
+		429CD6B319F8A98D00E01E3E /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = SOURCE_ROOT; };
+		429CD6B419F8A98D00E01E3E /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 		42629A1D19F799E2005A30DF /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				429CD6B319F8A98D00E01E3E /* Calculator.h */,
+				429CD6B419F8A98D00E01E3E /* Calculator.m */,
 				42629A2219F799E2005A30DF /* AppDelegate.h */,
 				42629A2319F799E2005A30DF /* AppDelegate.m */,
 				42629A2519F799E2005A30DF /* ViewController.h */,
@@ -110,6 +118,8 @@
 				42629A2B19F799E2005A30DF /* Images.xcassets */,
 				42629A2D19F799E2005A30DF /* LaunchScreen.xib */,
 				42629A1E19F799E2005A30DF /* Supporting Files */,
+				42629A7119F7B550005A30DF /* ButtonFactory.h */,
+				42629A7219F7B550005A30DF /* ButtonFactory.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -148,7 +158,7 @@
 				42629A5519F79AA3005A30DF /* backgroundWithLabelView2.png */,
 				42629A5619F79AA3005A30DF /* btnBlack.png */,
 				42629A5719F79AA3005A30DF /* btnBlackPressed.png */,
-				42629A5819F79AA3005A30DF /* BtnGrey.png */,
+				42629A5819F79AA3005A30DF /* btnGrey.png */,
 				42629A5919F79AA3005A30DF /* btnGreyPressed.png */,
 				42629A5A19F79AA3005A30DF /* btnGreySelected.png */,
 				42629A5B19F79AA3005A30DF /* btnRed.png */,
@@ -237,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42629A6019F79AA3005A30DF /* BtnGrey.png in Resources */,
+				42629A6019F79AA3005A30DF /* btnGrey.png in Resources */,
 				42629A6219F79AA3005A30DF /* btnGreySelected.png in Resources */,
 				42629A5D19F79AA3005A30DF /* backgroundWithLabelView2.png in Resources */,
 				42629A6F19F7A0B7005A30DF /* appIcon-120x120.png in Resources */,
@@ -269,7 +279,9 @@
 			files = (
 				42629A2719F799E2005A30DF /* ViewController.m in Sources */,
 				42629A2419F799E2005A30DF /* AppDelegate.m in Sources */,
+				42629A7319F7B550005A30DF /* ButtonFactory.m in Sources */,
 				42629A2119F799E2005A30DF /* main.m in Sources */,
+				429CD6B519F8A98D00E01E3E /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +472,7 @@
 				42629A4019F799E3005A30DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42629A4119F799E3005A30DF /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				42629A4319F799E3005A30DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
